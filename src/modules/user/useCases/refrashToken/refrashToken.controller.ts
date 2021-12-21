@@ -1,9 +1,10 @@
-import { REFRASH_TOKEN_COOKIE_KEY } from 'constants/auth'
 import { NextFunction, Request, Response } from 'express'
-import logger from 'utils/logger'
-import { RefrashTokenService } from './refrashToken.service'
 
-import { SERVER_ERRORS } from 'constants/errors'
+import { REFRASH_TOKEN_COOKIE_KEY } from 'constants/auth'
+
+import logger from 'utils/logger'
+
+import { RefrashTokenService } from './refrashToken.service'
 
 export class RefrashTokenController {
 	constructor (private readonly service: RefrashTokenService) {}
